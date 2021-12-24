@@ -21,7 +21,7 @@ class Tentacle{
 
 
 
-	void update(float x,float y){
+	void update(float dt,float x,float y){
 		int i=SEGMENT_COUNT;
 		while (i>0){
 			i--;
@@ -31,7 +31,7 @@ class Tentacle{
 			this.xl[i]*=m;
 			this.yl[i]*=m;
 			x-=this.xl[i];
-			y+=GRAVITY-this.yl[i];
+			y-=this.yl[i];
 		}
 		x-=this.x;
 		y-=this.y;
