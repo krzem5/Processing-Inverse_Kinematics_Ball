@@ -12,8 +12,6 @@ final float SEGMENT_MASS=50;
 
 Tentacle t;
 Ball b;
-int mx;
-int my;
 int _lt;
 
 
@@ -22,8 +20,6 @@ void setup(){
 	size(2048,1024);
 	t=new Tentacle(width/2,height/4);
 	b=new Ball(width/2,height/4);
-	mx=width/2;
-	my=height/2;
 	_lt=millis();
 }
 
